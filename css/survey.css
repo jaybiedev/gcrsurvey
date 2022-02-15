@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100;0,400;0,500;1,100&family=Roboto+Condensed&display=swap');
+
+body{
+    font-family: Source Sans Pro, helvetica;
+	text-align: left;
+	background: #e1ab3680;
+}
+td{
+	padding-right: 10px;
+}
+.contact{
+	color:rgb(14, 6, 43);
+	background:rgba(225, 171, 54, .8);
+	width: 500px;
+}
+.contact td{
+	padding-right: 5px;
+}
+
+#info{
+	position: absolute;
+	top: 90px;
+	font-size: 20px;
+	background:rgba(14, 6, 43, 0.08);
+	background-image: url(../images/infoBackgr.png);
+	background-size: 100% 100%;
+	color:rgb(15, 11, 27);
+	width:580px;
+	height: 147px;
+	padding: 8px;	
+}
+#info p{
+	position: relative;
+	top: -5px;
+	z-index: 1;
+	margin-left: 200px;
+	font-size: 20px;
+	color:rgb(15, 11, 27);
+	width:580px;
+	height: 147px;
+}
+.smallerInfo{
+	font-size: 20px;
+	line-height: 11px;
+	color:rgb(131, 11, 57);
+	font-style: italic;
+}
+.smallerInfo2{
+	font-size: 20px;
+	line-height:-5px;
+	color:rgb(14, 6, 43);
+	font-style: italic;
+}
+.incentiveHead{
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:rgb(37, 14, 121);
+	font-weight: 800px;
+}
+
+#incentiveHighlight{ 
+	width: 200px;
+	height: 133px; 
+	background-image: url(../images/incentive_gifts_sm.png);
+	background-size: 100% 100%;
+}
+
+#incentiveHighlight p{ 
+	position: relative;
+	width: 384px;
+	top: 0px;
+	left: 208px;
+	font-size: 17px;
+	color:rgb(131, 11, 57);
+	font-style: italic;	
+	line-height: 20px;
+}
+.tinyInfo{
+	font-size: 14px;
+}
+.checkboxtext{
+  /* Checkbox text */
+  display:inline-table;
+  vertical-align: middle;
+  margin-left: 10;
+}
+input[type=checkbox]{
+	/* Double-sized Checkboxes */
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
+	padding: 10px;
+}
+
+textbox{
+    font-size: 26px;
+    border: 3px solid #272a3c;
+    background: rgba(225, 171, 54, .5);
+}
+textarea::placeholder {
+	font-size: 22px;
+  }
+textarea{
+    height: 6em;
+	width: 43.5em;
+    border: 3px solid #272a3c;
+    background: #e1ab3680;
+}
+
+radio{
+    font-size: 24px;
+    border: 3px solid #272a3c;
+    background: rgba(225, 171, 54, .5);
+}
+button{
+    size: 46px;
+	color:#e1ab36;
+	font-weight: 900;
+	padding: 6px;
+    border: 1px solid #f1f1f5;
+	border-radius: 5px;
+    background: #272a3c;
+	display:inline-block;
+    vertical-align: text-bottom;
+	margin-left: 20px;
+}
+
+.srvyBtn{
+    size: 52px;
+	color:#e1ab36;
+	font-weight: 900;
+	padding: 6px;
+    border: 1px solid #f1f1f5;
+	border-radius: 5px;
+    background: #272a3c;
+	display:inline-block;
+    vertical-align: text-bottom;
+	margin-left: 20px;
+}
+
+.head{
+	width: 520px;
+    font-size: 26px;
+    color: #E4E6F4;
+    font-weight: 900;
+	padding: 3px;
+	background-color: rgba(14, 6, 43, 0.25);
+    display:inline-block;
+    vertical-align: text-bottom;
+	/* margin-left: 10px;
+	margin-top: 3px; */
+	position: absolute;
+	top: 15px; 
+	left: 72px;
+}
+
+.hd_img{
+	width:45px;
+	position: absolute;
+	top: 12px; 
+	left: 20px;
+}
+
+.herobox{
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	left: 10px;
+	z-index: -5; /*0 is default*/
+}
+
+#survey{
+	position: absolute;
+	top: 220px;
+	font-size: 32px;
+	color:rgb(14, 6, 43);
+	font-weight: 800;
+	font-style: italic;
+	text-align: justify;
+	word-break: break-word;
+	hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	line-height: 35px; 
+	width: 600px;
+	padding:6px;
+}
+
+#survey .surEmph{
+	font-family: Roboto Condensed, helvetica;
+	font-style: italic;
+}
+
+#survey .parenth{
+	font-size: 25px;
+}
+
+#survey .condensed{
+	font-size: 26px;
+	font-style: italic;
+	line-height: 30px; 
+}
+
+#survey .Morecondensed{
+	font-size: 24px;
+	font-style: italic;
+	line-height: 0px; 
+}
+.buttonArray{
+	background:rgba(14, 6, 43, 0.08);
+	width:594px;
+	height: 50px;
+	padding: 3px;
+}
+/*Smaller Screen*/
+@media screen and (max-width: 500px){
+/*
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 500px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+*/
+	button{
+		size: 32px;
+		font-weight: 800;
+		padding:8px;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	textarea::placeholder {
+		font-size: 19px;
+	  }
+	textarea{
+		width: 27em;
+	}
+
+	td{
+		padding-right: 5px;
+	}
+	.checkboxtext{
+		/* Checkbox text */
+		display:inline-table;
+		vertical-align: middle;
+		margin-left: 6;
+		font-size: 13px;
+	  }
+	  input[type=checkbox]{
+		/* Double-sized Checkboxes */
+		-ms-transform: scale(1.5); /* IE */
+		-moz-transform: scale(1.5); /* FF */
+		-webkit-transform: scale(1.5); /* Safari and Chrome */
+		-o-transform: scale(1.5); /* Opera */
+		transform: scale(1.5);
+		padding: 6px;
+	}
+	.herobox{
+		width: 376px;
+		height: auto;
+		position: absolute;
+		top: 5px;
+		left: 10px;
+		z-index: -5; /*0 is default*/
+	}
+	.hd_img{
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-right: 10px;
+		width:32px;
+		position: relative;
+		top: 6px;
+	}
+	#survey{
+		position: absolute;
+		top: 160px;
+		font-family: Roboto Condensed, helvetica;
+		font-size: 29px;
+		font-weight: 600;
+		width: 360px;
+		padding:6px;
+	}
+	#survey .condensed{
+		font-size: 24px;
+		line-height: 20px;
+	}
+	#survey .Morecondensed{
+		font-size: 20px;
+		font-style: italic;
+		line-height: 0px; 
+	}
+	#info{
+		position: absolute;
+		top: 120px;
+		font-size: 20px;
+		background:rgba(14, 6, 43, 0.08);
+		background-image: url(../images/infoBackgr.png);
+		background-size: 100% 100%;
+		color:rgb(15, 11, 27);
+		width:356px;
+		height: 147px;
+		padding: 8px;	
+	}
+	#info p{
+		position: relative;
+		top: -5px;
+		z-index: 1;
+		margin-left: 118px;
+		font-size: 13px;
+		color:rgb(15, 11, 27);
+		height: 147px;
+	}
+	.incentiveHead{
+		font-size: 13px;
+		font-weight: 800px;
+	}
+	#incentiveHighlight{ 
+		width: 154px;
+		height: 108px; 
+		background-size: 100% 100%;
+	}
+	
+	#incentiveHighlight p{ 
+		position: relative;
+		width: 206px;
+		height: auto;
+		top: 0px;
+		left: 160px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.buttonArray{
+		background:rgba(14, 6, 43, 0.08);
+		width:355px;
+		height: 44px;
+		padding: 3px;
+	}
+	.smallerInfo{
+		font-size: 17px;
+		line-height:-5px;
+		font-style: italic;
+	}
+	.smallerInfo2{
+		font-size: 17px;
+		line-height:-5px;
+		font-style: italic;
+	}
+	.head{
+		width: 300px;
+		font-size: 12px;
+		font-weight: 800;
+		margin-top: 10px;
+	}
+	
+}	
