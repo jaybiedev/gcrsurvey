@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 20, 2022 at 10:47 AM
+-- Generation Time: Feb 15, 2022 at 09:12 PM
 -- Server version: 5.6.51-cll-lve
 -- PHP Version: 7.3.32
 
@@ -33,6 +33,7 @@ CREATE TABLE `TblGCRSurveyData` (
   `firstName` varchar(20) DEFAULT NULL,
   `lastName` varchar(25) DEFAULT NULL,
   `phone` varchar(25) DEFAULT NULL,
+  `email` varchar(35) DEFAULT NULL,
   `preferredContact` varchar(5) DEFAULT NULL,
   `COVID_Situation` varchar(500) DEFAULT NULL,
   `ChurchDoBetterJob` varchar(300) DEFAULT NULL,
@@ -49,9 +50,8 @@ CREATE TABLE `TblGCRSurveyData` (
 -- Dumping data for table `TblGCRSurveyData`
 --
 
-INSERT INTO `TblGCRSurveyData` (`id`, `firstName`, `lastName`, `phone`, `preferredContact`, `COVID_Situation`, `ChurchDoBetterJob`, `unansweredQuestGod`, `UnansweredQuestionsGodExplan`, `freqAttendChurch`, `IWouldAttendChurchIf`, `heardOfGCR`, `impressionOfGCR`, `wouldLikeContact`) VALUES
-(1, 'William', 'Jackson', '(932) 487-9995', 'email', 'My family has been devastated by COVID. My wife and I have experienced the loss of a parent each, with my children losing 2 grandparents. The restrictions that COVID has caused on travel has left my family with a sense of void and disconnect.', 'The average church stays tucked away in a corner, until Sunday. But we need God every day. More presence.', 'y', 'I wonder whether COVID is an expression of God\'s wrath or His way of strengthing our character', 'Occasionally', 'n/a', 'n', 'n/a', 'contact'),
-(2, 'left_blank', 'left_blank', 'left_blank', 'n/a', 'I lost my job due to COVID-19.', 'left_blank', 'n', 'n/a', 'Rarely', 'left_blank', 'n', 'n/a', '');
+INSERT INTO `TblGCRSurveyData` (`id`, `firstName`, `lastName`, `phone`, `email`, `preferredContact`, `COVID_Situation`, `ChurchDoBetterJob`, `unansweredQuestGod`, `UnansweredQuestionsGodExplan`, `freqAttendChurch`, `IWouldAttendChurchIf`, `heardOfGCR`, `impressionOfGCR`, `wouldLikeContact`) VALUES
+(1, 'Barry', 'Ford', '2148083948', 'bford@futurebroadcast.biz', 'Phone', 'quick test 2/9/2022 4:07', 'quick test 2/9/2022 4:07', 'n', '...', 'Occasionally', '...', 'n', '...', 'contact');
 
 --
 -- Indexes for dumped tables
@@ -71,7 +71,7 @@ ALTER TABLE `TblGCRSurveyData`
 -- AUTO_INCREMENT for table `TblGCRSurveyData`
 --
 ALTER TABLE `TblGCRSurveyData`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

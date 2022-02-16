@@ -2,15 +2,11 @@
 session_start();
     if(isset($_SESSION['completed'])){
          if($_SESSION['completed']=="done"){
-        header("Location: https://www.futurebroadcast.net/gcrsurvey2/surveyExit.php");
+        header("Location: ../surveyExit.php");
         }   
     }
 
     require "classes/DB_Obj.php";
-	//Add CONSTANTS Controls
-	require_once 'includes/DebugLogConst.php';
-	//Set ERROR REPORTING using CONSTANTS Controls
-	if(ERRORS)require_once 'includes/set_ErrorReportingON.php';
 
     $DB_Obj=new DB_Obj("BFORDMUSICIAN.TblGCRSurveyData");
 
