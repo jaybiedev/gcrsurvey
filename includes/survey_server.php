@@ -8,7 +8,7 @@ session_start();
 
     require "classes/DB_Obj.php";
 
-    $DB_Obj=new DB_Obj("BFORDMUSICIAN.TblGCRSurveyData");
+    $DB_Obj=new DB_Obj("TblGCRSurveyData");
 
     $message ="";
     $COVID_Situation="";
@@ -447,8 +447,9 @@ session_start();
         unset($_POST);
         $_SESSION['completed']="done";
 
-        header("Location: https://www.futurebroadcast.net/gcrsurvey2/surveyExit.php");
-        
+        include_once("surveyExit.php");
+        exit;
+ 
         //exit message in case an issue with relocate
         $survey="<span class=\"condensed\">This completes the questionnaire. Thank you so much for your participation!</span>
 		<br><br>

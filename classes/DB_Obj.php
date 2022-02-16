@@ -14,11 +14,13 @@
         private $dbID;
 
         public function __construct($db_table){
-            //set DB table
-            $this->dbTable=$db_table;
+           
+	    $this->configure();
 
+	    //set DB table
+            $this->dbTable=$db_table;
             //Set PDO
-            $dsn = "mysql:host=".$this->host."; dbName=". $this->dbName;
+            $dsn = "mysql:host=".$this->host."; dbname=". $this->dbName;
             //set options
             $options=array(
                 PDO::ATTR_PERSISTENT => true,
@@ -35,6 +37,25 @@
                 echo $this->error."<br>";
             }
         }
+
+        private function configure() {
+
+        	$config_file = "config.ini";
+		if (!file_exists($config_file)) {
+	           return;
+                }
+             
+                $configs = parse_ini_file($config_file, true);
+                $database = $configs['database'];
+
+		$this->host = $database['host'];
+		$this->port = $database['port'];
+		$this->dbName = $database['dbname'];
+		$this->userName = $database['user'];
+		$this->password = $database['password'];
+        
+		return $this;
+	}
 
         public function query($query){
             $this->dbStatement = $this->dbHandler->prepare($query);
