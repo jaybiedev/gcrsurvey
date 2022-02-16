@@ -5,7 +5,7 @@
         private $host = "localhost";
         private $userName = "";
         private $password = "";
-        private $dbName = "SURVEY";
+        private $dbName = "BFORDMUSICIAN";
         private $dbTable;
 
         private $dbHandler;
